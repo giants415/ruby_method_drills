@@ -1,16 +1,22 @@
 #########################
 #### USING ARGUMENTS ####
 #########################
-#say_hello
-  # returns 'hello'
+#say_hello -done
+def say_hello
+  p 'hello'
+end
 
 #echo
-  # returns the input string
+def echo(input)
+  p input
+end
 
 #eddie_izzards_height
-  # calculates and returns Eddie Izzard's height
-  # takes in the height of heels he's wearing (default value: 0)
-  # and adds heel height to his base 67 inches for the result
+def eddie_izzards_height(heel_height=0)
+  eddie_izzards_height = 67
+  eddie_izzards_height = eddie_izzards_height + heel_height
+  p eddie_izzards_height
+end
 
 #how_many_args
   # accepts any number of arguments without complaint
